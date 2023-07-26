@@ -1,0 +1,549 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+
+    margin:0;
+    background-color:black;
+    
+    color:white;
+    overflow:hidden;
+}
+
+.main
+{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar
+{
+    width:30%;
+    height:83.2%;
+}
+
+    .options
+    {
+        background-color:#121212;
+        height:15%;
+
+        border-radius: 0.5rem;
+        margin:0.5rem;
+        
+        padding:1.25rem;
+        list-style:none;
+
+        display:flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+    }
+
+    .options li a
+    {
+        color:white;
+        text-decoration: none;
+
+        opacity:0.7;
+    }
+
+    .options li a:hover
+    {
+        opacity:1.0;
+    }
+
+    .library
+    {
+        background-color: #121212;
+        height:70%;
+
+        border-radius: 0.5rem;
+
+        margin:0.5rem;
+        padding:1.25rem;
+    }
+
+    .lib-options
+    {
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .your-lib img
+    {
+        height:1rem;
+        width:1rem;
+    }
+
+    .your-lib a
+    {
+        color:white;
+        text-decoration: none; 
+        
+        opacity:0.7;
+    }
+
+    .your-lib a:hover
+    {
+        opacity:1;
+    }
+
+    .icons i
+    {
+        opacity:0.7;
+    }
+
+    .icons i:hover
+    {
+        opacity:1;
+    }
+
+    .box1
+    {
+        height:6.25rem;
+        background-color:#242424;
+        
+        margin-top:2rem;
+        padding:0.5rem;
+
+        border-radius:0.5rem;
+    }
+
+    .box-p1
+    {
+        font-weight:700;
+        font-size:1rem;
+    }
+
+    .box-p2
+    {
+        font-size:0.75rem;
+    }
+
+    .badge
+    {
+        background-color:white;
+        border-radius: 1.5rem;
+        border:none;
+
+        font-size:0.75rem;
+
+        padding:0.4rem 0.75rem;
+
+        margin-top:1.25rem;
+
+        font-weight:700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .badge:hover
+    {
+        scale:1.05;
+    }
+
+.main-content
+{
+    width:70%;
+    height:84.5%;
+    border-radius: 0.5rem;
+
+    background-color: #121212;
+    overflow:auto;
+    overflow-x: hidden;
+
+    margin:0.5rem;
+    margin-left:0rem;    
+}
+
+    .sticky-nav
+    {
+    height:10%;
+    width:68.5%;
+
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+
+    position:fixed;
+    border-top-left-radius: 0.5rem;
+
+    background-color:rgb(32, 32, 32);
+    display: flex;
+
+    justify-content: space-between;
+    z-index:1;
+    }
+
+    .arrows
+    {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .nav-arrow:hover
+    {
+        scale:1.1;
+    }
+
+    .nav-btn
+    {
+        display:flex;
+        justify-content: start;
+        align-items:center;
+    }
+
+    .install
+    {
+        background-color:black;
+        color:white;
+
+        border-radius: 1.43rem;
+        border:0.125rem solid white;
+
+        font-size:0.75rem;
+
+        padding:0.5rem 0.75rem;
+
+        font-weight:700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .install:hover
+    {
+        scale:1.05;
+    }
+
+    .user
+    {
+        background-color:black;
+        color:white;
+
+        border-radius: 1.43rem;
+        border:0.125rem dashed white;
+
+        font-size:0.75rem;
+
+        padding:0.5rem 0.75rem;
+
+        font-weight:700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .user:hover
+    {
+        scale:1.05;
+    }
+        
+    .premium
+    {
+        background-color:white;
+        
+        border-radius: 1.43rem;
+        border:none;
+
+        font-size:0.75rem;
+
+        padding:0.5rem 0.75rem;
+
+        font-weight:700;
+        font-family: 'Poppins', sans-serif; 
+    }
+
+    .premium:hover
+    {
+        scale:1.1;
+    }
+
+    #cards
+    {
+        position:relative;
+        top:3.3rem;
+    }
+
+   .heading
+   {
+        position:relative;
+        left:1rem;
+   }
+
+   .cards-container
+    {
+        display:flex;
+        flex-wrap:wrap;
+
+        width:100%;
+        height:40%;
+    }
+
+    .card-img
+    {
+        height:9.375rem;
+        width:9.375rem;
+        border-radius:0.5rem;    
+    }
+
+    .card-title
+    {
+        font-weight: 600;
+    }
+
+    .card-info
+    {
+        font-size:0.75rem;
+        opacity:0.7;
+    }
+
+    .card
+    {
+        background-color: #282828;
+        border-radius: 0.5rem;
+
+        padding:0.5rem;
+        margin-left:1rem;
+        margin-bottom:1rem;
+
+        height:16.75rem;
+        width:9.375rem;
+    }
+
+    .footer
+    {
+        height:2rem;
+        margin:0.5rem;
+        margin-top:3rem;
+
+        padding-bottom: 0.5rem;
+
+        border-radius:0.5rem;
+
+        background-color:rgb(32, 32, 32);
+
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .author
+    {
+        height:1rem;
+        justify-content: center;
+        align-items:center;
+
+        color:pink;
+    }
+
+    .heart
+    {
+        color:red;
+    }
+
+.music-player
+{
+    position:fixed;
+    
+    display:flex;
+    align-self:end;
+    justify-content:space-between;
+    
+    align-items:center;
+
+    width:100%;
+    height:5.55rem;
+
+    background-color: black;
+}
+    .player
+    {
+        width:40%;
+        
+        display:flex;
+        flex-direction: column;
+
+        align-items:center;
+
+        margin-top:0.75rem;
+    }
+
+    .player-icons
+    {
+        display:flex;
+        justify-content:center;
+    }
+
+    .player-control-icon
+    {
+        height:1rem;
+        opacity:0.7;  
+
+        margin-left:2rem;
+    }
+
+    .player-control-icon:hover
+    {
+        opacity:1
+    }
+
+    .play
+    {
+        scale:2;
+    }
+
+    .play:hover
+    {
+        scale:2.1;
+    }
+
+    .timeline
+    {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+
+        width:100%;
+        margin-left:2rem;
+        margin-top:0.5rem;
+    }
+
+    .progress-bar
+    {
+        width:70%;
+        appearance:none;
+        background-color: transparent;
+        cursor:pointer;
+    }
+
+    .progress-bar::-webkit-slider-runnable-track
+    {
+        background-color: #ddd;
+        border-radius: 6rem;
+        height:0.2rem;
+    }
+
+    .progress-bar::-webkit-slider-thumb
+    {
+        appearance:none;
+        height:0.65rem;
+        width:0.65rem;
+
+        background-color: green;
+
+        border-radius:50%;
+
+        margin-top:-0.25rem;
+    }
+
+    .time
+    {
+        color:snow;
+        font-size:0.75rem;
+    }
+
+    .album
+    {
+        width:30%;
+
+        display:flex;
+
+        justify-content:space-evenly;
+        align-items:center;
+
+        color:white;
+
+    }
+
+    .album-art
+    {
+        height:3.5rem;
+        width:3.5rem;
+
+        border-radius:0.5rem;
+    }
+
+    .album-icons
+    {
+        height:1.5rem;
+        width:1.5rem;
+    }
+
+    .controls
+    {
+        width:30%;
+
+        display:flex;
+
+        justify-content:space-evenly;
+        align-items:center;
+
+        color:white;
+    }
+
+    .volume-bar
+    {
+        width:75%;
+        appearance:none;
+        background-color: transparent;
+        cursor:pointer;
+
+        position:relative;
+        bottom:0.25rem;
+    }
+
+    .volume-bar::-webkit-slider-runnable-track
+    {
+        background-color: #ddd;
+        border-radius: 6rem;
+        height:0.2rem;
+    }
+
+    .volume-bar::-webkit-slider-thumb
+    {
+        appearance:none;
+        height:0.65rem;
+        width:0.65rem;
+
+        background-color: orange;
+
+        border-radius:50%;
+
+        margin-top:-0.25rem;
+    }
+
+@media (max-width:1115px)
+{
+    .hide2{
+        display:none;
+    }
+}
+
+@media (max-width:910px)
+{
+    .hide
+    {
+        display:none;
+    }
+
+    .main-content
+    {
+        width:100%; 
+        margin-left:0.5rem;
+    }
+
+    .sticky-nav
+    {
+        width:96.5%; 
+    }
+
+}
+
+@media (max-width:1020px)
+{
+    .hide3
+    {
+        display:none;
+    }
+
+    .player
+    {
+        width:100%;        
+    }
+}
